@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* 
+primary - 222831
+secondary - 393E46
+turnary - 00ADB5
+fourth - EEEEEE
+*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:active,
+:hover,
+.focus {
+  outline: 0;
+}
+
+a,
+a:hover{
+  text-decoration: none;
+}
+a:hover{
+  color: var(--fourth-color) !important;
+}
+
+ul,
+ol{
+  margin: 0;
+  padding: 0;
+}
+::selection{
+  background-color: var(--third-color);
+  /* color: var(--black-color); */
+}
+
+/* Variable define */
+:root{
+  --primary-color: #222831;
+  --secondary-color: #393E46;
+  --third-color: #00ADB5;
+  --fourth-color: #ffffff;
+  --primary-font: 'Roboto', 'sans-serif';
+  --secondary-font: 'Quicksand', 'sans-serif';
+  --text-color: #555;
+  --text-gray:#999;
+  --black-color: #000;
+
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: var(--primary-font);
+  font-size: 100%;
+  font-weight: 400;
+}
+
+/* 
+========Custom scrollBar========
+*/
+
+::-webkit-scrollbar{
+  width: 0.625rem;
+}
+::-webkit-scrollbar-track{
+  background: var(--fourth-color);
+}
+::-webkit-scrollbar-thumb{
+  background-image: linear-gradient(var(--primary-color), var(--third-color));
+}
+
+/* 
+===============================
+custom CSS Design
+===============================
+*/
+h1{
+  font-size: 3rem;
+  font-weight:900;
+  margin-bottom: 3rem;
+  color: var(--secondary-color);
+}
+h2{
+  font-weight: 700;
+  font-size: 2.25rem;
+  text-transform: capitalize;
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  line-height: 3rem;
+}
+
+h4{
+  color: var(--secondary-color);
+  font-family: var(--secondary-font);
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+h5{
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+p{
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+}
+.main-btn{
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  line-height: 1.5625rem;
+  background-color: var(--primary-color);
+  border: 0.1875rem solid var(--primary-color);
+  color: var(--fourth-color);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  transition: all .4s ease-out 0s;
+}
+
+.white-btn{
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  line-height: 1.5625rem;
+  background-color: var(--fourth-color);
+  border: 0.1875rem solid var(--primary-color);
+  color: var(--primary-color);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 0.19);
+  transition: all .4s ease-out 0s;
+}
+
+.main-btn:hover{
+  background-color: transparent;
+  color: var(--primary-color);
+}
+.white-btn:hover{
+  background-color: var(--primary-color);
+  color: var(--fourth-color);
+  border-color: var(--primary-color);
+}
+
+.wrapper{
+  padding-top: 8.25rem;
+  padding-bottom: 8.25rem;
+}
+.text-content{
+  width: 70%;
+  margin: auto;
+}
+
+/* 
+===========================
+Header Design
+===========================
+*/
+
+
+.navigation-wrap{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+}
+
+.navbar .container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 2px 1px 4px var(--secondary-color);
+  background-color: var(--fourth-color);
+  background-image: linear-gradient(to left top, var(--third-color), var(--primary-color));
+}
+.navbar .container ul{
+  list-style-type: none;
+  display: flex;
+  padding: 2rem 0;
+  padding-right: 11.125rem;
+  position: relative;
+}
+.navbar .container .phone-btn{
+  position: absolute;
+  right: 1.285rem;
+  top: 0.495rem;
+}
+
+.navigation-wrap .nav-item{
+  padding: 0 0.625rem;
+  transition: all 200ms linear;
+}
+
+.nav-link{
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+}
+.navigation-wrap .main-btn{
+  padding: 0.3125rem 1.4375rem;
+  margin-left: 0.625rem;
+}
+
+#stadiumLogo::selection{
+  cursor: none;
+}
+
+
+/* 
+==================================
+Top banner Design
+==================================
+*/
+.home-sec{
+  background: url(/images/HRI/Turf-cricket.jpeg) no-repeat;
+  background-position: 30rem;
+  background-size: cover;
+  padding: 15.875rem 0 9.375rem;
+}
+.home-sec .home-message-text{
+  /* background-color: aquamarine; */
+  width: 50%;
+  padding: 0.875rem;
+}
+.home-sec .home-message-text .home-buttons{
+  margin: 1.875rem 0;
+}
+
+
+
+/* 
+==================================
+          counter
+==================================
+*/
+/* 
+===================================
+          about section Design
+===================================
+*/
+.about-section{
+  background: var(--fourth-color);
+  width: 100%;
+}
+.about-section .container{
+  display: flex;
+}
+.about-section .about-img img{
+  border-radius: 0.625rem;
+  width: 90%;
+  margin: 0 3.275rem;
+}
+.about-section .about-message-text{
+  padding-left: 2rem;
+  /* width: 50%; */
+}
+.about-section .about-message-text p, button{
+  margin-top: 0.985rem;
+}
+.about-section .about-message-text ul{
+  margin-top: 0.725rem;
+}
+
+/* 
+===================================
+          turf-type designs
+===================================
+*/
+.turf-type{
+  padding-top: 3.25rem;
+}
+.turf-type img{
+  border-radius: 0.625rem;
+}
+.turf-type ul li{
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 32px;
+  position: relative;
+  margin-left: 30px;
+  list-style-type: none;
+}
+.turf-type ul li::before{
+  color: var(--primary-color);
+  position: absolute;
+  left: -2.1875rem;
+  font-size: 1.25rem;
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+/*
+===============================
+        Story Section
+===============================
+*/
+.story-section{
+  width: 100%;
+  height: 27.725rem;
+  background: url("/images/HRI/Cricket-baneer.jpeg") no-repeat top right;
+  color: var();
+  padding-top: 100px;
+  text-align: center;
+}
+.story-section h2{
+  color: var(--secondary-color);
+}
+.story-section p{
+  color: var(--fourth-color);
+}
+
+/* 
+=====================================
+          Explore Section
+=====================================
+*/
+
+.explore-venue .explore-venue-text{
+  text-align: center;
+  margin-bottom: 1.395rem;
+}
+
+.explore-venue .venue-cards{
+  width: 100%;
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin: 0 1.925rem;
+}
+
+.explore-venue .card{
+  border: none;
+  background-color: transparent;
+  border-radius: 0.9375rem;
+}
+
+.explore-venue .card img{
+  border-radius: 0.9375rem;
+  object-fit: cover;
+  max-width: 90%;
+}
+.explore-venue .card span{
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  padding-bottom: 0.395rem;
+  border-bottom: 0.0625rem solid var(--fourth-color);
+}
+.explore-venue .card span del{
+  color: var(--text-gray);
+  margin-left: 0.5rem;
+}
+.explore-venue .card .venue-details h4{
+  margin-top: 1.025rem;
+}
+.explore-venue .card .venue-details span{
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+}
+.explore-venue .card img:hover{
+  animation:  scale_size .4s .4s ease-in forwards;
+}
+
+@keyframes scale_size {
+  0%{
+    transform: scale(1);
+  }
+  25%{
+    transform: scale(1.02);
+  }
+  50%{
+    transform: scale(1.04);
+  }
+  75%{
+    transform: scale(1.07)
+  }
+  100%{
+    transform: scale(1.1);
+  }
+}
+
+/* 
+==============================
+      Review Design
+==============================
+*/
+
+/* 
+===================================
+    FAQ
+===================================
+*/
+.faq .faq-heading{
+  text-align: center;
+}
+.faq .quesAnss{
+  width: 100%;
+  display: flex;
+  padding: 0.8255rem 0.985rem;
+  gap: 1.825rem;
+}
+.faq .queAns{
+  width: 50%;
+}
+
+.faq h4 span{
+  color: var(--primary-color);
+  font-size: 1.875rem;
+  margin-right: 0.3125rem;
+}
+
+.book-turf{
+  width: 100%;
+  background: url(/images/bg/bg-3.avif) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0 71.9125px;
+  padding: 4.375rem 0;
+}
+.book-turf .book-turf-text{
+  text-align: center;
+}
+
+.book-turf h2{
+  color: var(--primary-color);
+}
+
+/*    NewsLetter   */
+
+.newsletter{
+  width: 75%;
+  margin: 0 auto;
+}
+.newsletter .form-input{
+  height: 3.225rem;
+  padding: 0 1.25rem;
+  font-size: 0.875rem;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  border: 0.1875rem solid var(--text-gray);
+  color: var(--black-color);
+  font-weight: 700;
+}
+.newsletter .newsletter-text{
+  text-align: center;
+}
+
+.newsletter .form-input:hover, 
+.newsletter .form-input:focus{
+  outline: none;
+  box-shadow: none;
+  border-color: var(--primary-color);
+}
+.newsletter .newsletter-inputs-controls{
+  text-align: center;
+}
+
+/* 
+======================================
+        Footer Section Design
+======================================
+*/
+
+.footer{
+  background-color: var(--primary-color);
+  padding: 2.975rem 0;
+}
+.footer .container{
+  text-align: center;
+}
+.footer .copyrights, p{
+  margin: 1.975rem 0;
+  color: var(--text-color);
+}
+.footer .footer-social{
+  padding: 2.325rem 0;
+}
+.footer .footer-link{
+  font-size: 1rem;
+  color: var(--fourth-color);
+  padding: 0 1.875rem;
+}
+.footer .footer-link:hover{
+  color: var(--fourth-color) !important;
+  text-decoration: underline;
+}
+.footer a i{
+  font-size: 1rem;
+  color: var(--fourth-color);
+  padding: 0 1.5rem;
+}
+.footer a i:hover{
+  color: var(--third-color);
+}
