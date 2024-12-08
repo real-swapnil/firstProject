@@ -40,15 +40,35 @@ ol{
 /* Variable define */
 :root{
   --primary-color: #222831;
+  --primary-color-nav: #222831;
+  --primary-color-footer: #222831;
   --secondary-color: #393E46;
   --third-color: #00ADB5;
   --fourth-color: #ffffff;
+  --fourth-color-footer: #ffffff;
   --primary-font: 'Roboto', 'sans-serif';
   --secondary-font: 'Quicksand', 'sans-serif';
   --text-color: #555;
   --text-gray:#999;
   --black-color: #000;
 
+}
+.DarkMode{
+    --primary-color: #ffffff;
+    --primary-color-nav: #000;
+    --primary-color-footer: #000;
+    --secondary-color: #707A84;
+    --third-color: #00ADB5;
+    --fourth-color: #000;
+    --fourth-color-footer: #ffffff;
+    --primary-font: 'Roboto', 'sans-serif';
+    --secondary-font: 'Quicksand', 'sans-serif';
+    --text-color: #555;
+    --text-gray:#999;
+    --black-color: white;
+}
+.DarkMode2{
+  background-color: #000;
 }
 
 html{
@@ -167,6 +187,24 @@ p{
   margin: auto;
 }
 
+.Mode{
+  height: 2rem;
+  width: 2rem;
+  padding-top: 0.1235rem;
+  text-align: center;
+  vertical-align: middle;
+  text-align: center;
+  margin: 1.7825rem;
+  background-color: var(--primary-color);
+  color: var(--fourth-color);
+  border: none;
+  font-size: large;
+  border-radius: 50%;
+}
+.Mode i{
+text-align: center;
+}
+
 /* 
 ===========================
 Header Design
@@ -189,7 +227,7 @@ Header Design
   justify-content: space-between;
   box-shadow: 2px 1px 4px var(--secondary-color);
   background-color: var(--fourth-color);
-  background-image: linear-gradient(to left top, var(--third-color), var(--primary-color));
+  background-image: linear-gradient(to left top, var(--third-color), var(--primary-color-nav));
 }
 .navbar .container ul{
   list-style-type: none;
@@ -237,12 +275,18 @@ Top banner Design
   background-size: cover;
   padding: 15.875rem 0 9.375rem;
 }
-.home-sec .home-message-text{
+.home-sec-dark{
+  background: url(/images/HRI/Turf-cricket-Dark.png) no-repeat;
+  background-position: 30rem;
+  background-size: cover;
+  padding: 15.875rem 0 9.375rem;
+}
+.home-message-text{
   /* background-color: aquamarine; */
   width: 50%;
   padding: 0.875rem;
 }
-.home-sec .home-message-text .home-buttons{
+.home-message-text .home-buttons{
   margin: 1.875rem 0;
 }
 
@@ -326,6 +370,7 @@ Top banner Design
   padding-top: 100px;
   text-align: center;
 }
+
 .story-section h2{
   color: var(--secondary-color);
 }
@@ -491,7 +536,7 @@ Top banner Design
 */
 
 .footer{
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-footer);
   padding: 2.975rem 0;
 }
 .footer .container{
@@ -506,16 +551,16 @@ Top banner Design
 }
 .footer .footer-link{
   font-size: 1rem;
-  color: var(--fourth-color);
+  color: var(--fourth-color-footer);
   padding: 0 1.875rem;
 }
 .footer .footer-link:hover{
-  color: var(--fourth-color) !important;
+  color: var(--fourth-color-footer) !important;
   text-decoration: underline;
 }
 .footer a i{
   font-size: 1rem;
-  color: var(--fourth-color);
+  color: var(--fourth-color-footer);
   padding: 0 1.5rem;
 }
 .footer a i:hover{
