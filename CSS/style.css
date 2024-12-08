@@ -270,13 +270,13 @@ Top banner Design
 ==================================
 */
 .home-sec{
-  background: url(/images/HRI/Turf-cricket.jpeg) no-repeat;
+  background: url(https://real-swapnil.github.io/firstProject/images/HRI/Turf-cricket.jpeg) no-repeat;
   background-position: 30rem;
   background-size: cover;
   padding: 15.875rem 0 9.375rem;
 }
 .home-sec-dark{
-  background: url(/images/HRI/Turf-cricket-Dark.png) no-repeat;
+  background: url(https://real-swapnil.github.io/firstProject/images/HRI/Turf-cricket-Dark.png) no-repeat;
   background-position: 30rem;
   background-size: cover;
   padding: 15.875rem 0 9.375rem;
@@ -483,7 +483,7 @@ Top banner Design
 
 .book-turf{
   width: 100%;
-  background: url(/images/bg/bg-3.avif) no-repeat;
+  background: url(https://real-swapnil.github.io/firstProject/images/bg/bg-3.avif) no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 0 71.9125px;
